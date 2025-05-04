@@ -1,0 +1,48 @@
+/* Custom styles to complement Tailwind */
+.bmi-underweight {
+    background-color: #93c5fd; /* blue-300 */
+}
+
+.bmi-normal {
+    background-color: #86efac; /* green-300 */
+}
+
+.bmi-overweight {
+    background-color: #fcd34d; /* yellow-300 */
+}
+
+.bmi-obese {
+    background-color: #fca5a5; /* red-300 */
+}
+
+/* Animation for loading spinner */
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+.animate-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e0;
+    border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #a0aec0;
+}
+
+/* Transition effects */
+.fade-enter-active, .fade-leave-active {
+    transition: opacity 0.3s;
+}
+.fade-enter, .fade-leave-to {
+    opacity: 0;
+}
